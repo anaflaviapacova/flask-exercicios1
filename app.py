@@ -16,3 +16,7 @@ def saudar(nome):
     nome_capitalizado = nome.capitalize()
     return f'Olá, {nome_capitalizado}!'
 
+@app.route('/quadrado/<int:n>')
+def quadrado(n):
+    resultado = n ** 2
+    return f'{n}² = {resultado}'
